@@ -118,8 +118,7 @@ class DismissibleDialog<T> extends PopupRoute<T> {
   Duration get transitionDuration => const Duration(milliseconds: 300);
 
   @override
-  Widget buildPage(BuildContext context, Animation<double> animation,
-      Animation<double> secondaryAnimation) {
+  Widget buildPage(BuildContext context, Animation<double> animation, Animation<double> secondaryAnimation) {
     return Center(
       child: DefaultTextStyle(
         style: Theme.of(context).textTheme.bodyMedium!,
@@ -132,8 +131,7 @@ class DismissibleDialog<T> extends PopupRoute<T> {
             ),
             child: Column(
               children: <Widget>[
-                Text(dialogTextTitle,
-                    style: Theme.of(context).textTheme.headlineSmall),
+                Text(dialogTextTitle, style: Theme.of(context).textTheme.headlineSmall),
                 const SizedBox(height: 25),
                 Text(dialogTextOutput, style: const TextStyle(fontSize: 20)),
               ],
